@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Asap;
+}
+
+header{
+    background-color: white;
+    padding: 20px;
+}
+
+.green-glow{
+    border: 4px solid #4dcc7d !important;
+    box-shadow: 0px 0px 10px #31b43a;
+}
+
+.red-glow{
+    border: 4px solid #fc121b !important;
+    box-shadow: 0px 0px 10px #d01115;
+}
+
+.gray-glow{
+    border: 4px solid #464647 !important;
+    box-shadow: 0px 0px 10px #25292b;
+}
+
+header > h1{
+    color: #25272E;
+    text-align: center;
+    font-weight: bold;    
+}
+
+body{
+    background-color: #292C34;
+}
+
+.score-board{
+    margin: 20px auto;
+    border:3px solid white;
+    border-radius: 4px;
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-size: 46px;
+    padding: 15px 20px;
+    font-family: Asap, sans-serif;
+    position: relative;
+}
+
+.badge{
+    background: #E2584D;
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+    font-family: Asap, sans-serif;
+}
+
+#user-label{
+    position: absolute;
+    top: 30px;
+    left: -25px;    
+}
+
+#computer-label{
+    position: absolute;
+    top: 30px;
+    right: -25px;    
+}
+
+.result{
+    font-size: 5vh;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.result > p{
+    text-align: center;
+    font-family: Asap, sans-serif;
+}
+
+.choices{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.choice{
+    border: 4px solid white;
+    border-radius: 50%;
+    margin: 0px 20px;
+    padding: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.choice:hover{
+    cursor: pointer;
+    background: #24272E;
+}
+
+#action-message{
+    text-align: center;
+    color: white;
+    font-family: Asap, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.restargame{
+    position: relative;
+    text-align: right;
+    margin: 20px 20px;
+}
+
+.restargame > button{
+    background: #E2584D;
+    color: white;   
+    font-weight: bold;
+    letter-spacing: 1px; 
+    box-shadow: 1px 1px 2px white;
+}
+
+.restargame > button:hover{
+    color: white;
+    background: #9b3b34;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+
+.restargame > button:not(:hover){
+    transition: 0.5s ease;
+    transform: scale(1);
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .result{
+        font-size: 3vh;        
+    }
+    .choice > img{
+        height: 12vh;
+    }
+}
+
+/* Smartphone */
+@media screen and (max-width: 767px) {
+    .result{
+        font-size: 4vh;
+    }
+    .choice > img{
+        height: 15vh;
+    }
+}
+

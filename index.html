@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra Papel Tijera</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Piedra Papel Tijera</h1>
+    </header>
+
+    <div class="restargame">
+        <button class="btn" title="reiniciar juego" onclick="restargame()">Reiniciar</button>
+    </div>
+
+    <div class="score-board">
+        <div id="user-label" class="badge">Tú</div>
+        <div id="computer-label" class="badge">AI</div>
+
+        <span id="user-score">0 </span>:<span id="computer-score"> 0</span>
+    </div>
+
+    <div class="result">
+        <p></p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="img/hand-rock.png" alt="" />
+        </div>
+        <div class="choice" id="paper">
+            <img src="img/hand-paper.png" alt="" />
+        </div>
+        <div class="choice" id="scissors">
+            <img src="img/hand-scissors.png" alt="" />
+        </div>
+    </div>
+
+    <p id="action-message">Escoge tu movimiento.</p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
